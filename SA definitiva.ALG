@@ -1,11 +1,11 @@
 Algoritmo "semnome"
-// Disciplina   : LÛgica de ProgramaÁ„o
+// Disciplina   : L√≥gica de Programa√ß√£o
 // Professor   : Wellington Santos
-// DescriÁ„o   : Aqui vocÍ descreve o que o programa faz! (funÁ„o)
-// Autor(a)    : Nome do(a) aluno(a)
+// Descri√ß√£o   : Sistema de atendimento automatico
+// Autor(a)    : Artur Decli√©, Luiz Gomes
 // Data atual  : 20/03/2022
 Var
-   // SeÁ„o de DeclaraÁıes das vari·veis
+   // Se√ß√£o de Declara√ß√µes das vari√°veis
    opcao,opcao1,opcao2,opcao3,rep,y,dia,idade,cnh,cnh1,data,turno,start,parcela,tel:inteiro
    menu1,nome,cnh2,turno1:caracter
    total:real
@@ -21,7 +21,7 @@ inicio
    escreval("|                                               \")
    escreval("|                                                \")
    escreval("|                                                 \")
-   escreval("|    BEM VINDO AO AUTO ATENDIMENTO M√O NA RODA.    \________")
+   escreval("|    BEM VINDO AO AUTO ATENDIMENTO M√ÉO NA RODA.    \________")
    escreval("|                                                           |")
    escreval("|                                                           |")
    escreval("|      ______                          ______               |")
@@ -34,10 +34,10 @@ inicio
    escreval("")
    escreval(" __________________________________")
    escreval("|                                  |")
-   escreval("|1 - Tabela de VeÌculos            |")
-   escreval("|2 - Alugar ou Comprar um VeÌculo  |")
+   escreval("|1 - Tabela de Ve√≠culos            |")
+   escreval("|2 - Alugar ou Comprar um Ve√≠culo  |")
    escreval("|3 - Fale Conosco                  |")
-   escreval("|4 - D˙vidas Frequentes            |")
+   escreval("|4 - D√∫vidas Frequentes            |")
    escreval("|5 - Sobre a empresa               |")
    escreval("|0 - Encerrar atendimento          |")
    escreval("|__________________________________|")
@@ -47,12 +47,12 @@ fimprocedimento
 //tabela de veiculos
 procedimento tabela
 inicio
-   escreval("                 **** TABELA DE VEÕCULOS ****")
+   escreval("                 **** TABELA DE VE√çCULOS ****")
    //economicos
    rep<- 1
    escreval("       ________________________________________________")
-   escreval("      |                   EconÙmicos                   |")
-   escreval("      | CARRO    | ANO  | MONTADORA | VENDA   | DI¡RIA |")
+   escreval("      |                   Econ√¥micos                   |")
+   escreval("      | CARRO    | ANO  | MONTADORA | VENDA   | DI√ÅRIA |")
    repita rep
       escreval(" ",rep," - | ",x[rep,1]," | ",x[rep,2]," | ",x[rep,3]," | $",x[rep,4]," | $",x[rep,5]," |")
       rep<-rep+1
@@ -62,7 +62,7 @@ inicio
    rep<- 6
    escreval("       ________________________________________________")
    escreval("      |                     Sedans                     |")
-   escreval("      | CARRO    | ANO  | MONTADORA | VENDA   | DI¡RIA |")
+   escreval("      | CARRO    | ANO  | MONTADORA | VENDA   | DI√ÅRIA |")
    repita rep
       escreval(" ",rep," - | ",x[rep,1]," | ",x[rep,2]," | ",x[rep,3]," | $",x[rep,4]," | $",x[rep,5]," |")
       rep<-rep+1
@@ -77,7 +77,7 @@ inicio
    rep<-12
    escreval("       ________________________________________________")
    escreval("      |                      SUVs                      |")
-   escreval("      | CARRO    | ANO  | MONTADORA | VENDA   | DI¡RIA |")
+   escreval("      | CARRO    | ANO  | MONTADORA | VENDA   | DI√ÅRIA |")
    repita rep
       escreval("",rep," - | ",x[rep,1]," | ",x[rep,2]," | ",x[rep,3]," | $",x[rep,4]," | $",x[rep,5]," |")
       rep<-rep+1
@@ -87,7 +87,7 @@ inicio
    rep<-17
    escreval("       ________________________________________________")
    escreval("      |                    Pick-Ups                    |")
-   escreval("      | CARRO    | ANO  | MONTADORA | VENDA   | DI¡RIA |")
+   escreval("      | CARRO    | ANO  | MONTADORA | VENDA   | DI√ÅRIA |")
    repita rep
       escreval("",rep," - | ",x[rep,1]," | ",x[rep,2]," | ",x[rep,3]," | $",x[rep,4]," | $",x[rep,5]," |")
       rep<-rep+1
@@ -97,7 +97,7 @@ inicio
    rep<-21
    escreval("       ________________________________________________")
    escreval("      |                       4x4                      |")
-   escreval("      | CARRO    | ANO  | MONTADORA | VENDA   | DI¡RIA |")
+   escreval("      | CARRO    | ANO  | MONTADORA | VENDA   | DI√ÅRIA |")
    repita rep
       escreval("",rep," - | ",x[rep,1]," | ",x[rep,2]," | ",x[rep,3]," | $",x[rep,4]," | $",x[rep,5]," |")
       rep<-rep+1
@@ -113,7 +113,7 @@ inicio
    escreval("   $$$ Aluguel e Compra $$$   ")
    escreval("")
    escreval(" ___________________________")
-   escreval("|  Escolha a opÁ„o desejada |")
+   escreval("|  Escolha a op√ß√£o desejada |")
    escreval("|                           |")
    escreval("|1 - Alugar                 |")
    escreval("|2 - Comprar                |")
@@ -122,10 +122,10 @@ inicio
    escreva("->")
 fimprocedimento
 
-//finalizaÁ„o
+//finaliza√ß√£o
 procedimento fim
 inicio
-   escreva("A M„o na roda agradece sua preferÍncia, volte sempre.")
+   escreva("A M√£o na roda agradece sua prefer√™ncia, volte sempre.")
 fimalgoritmo
 fimprocedimento
 
@@ -136,8 +136,8 @@ fimprocedimento
 
 
 Inicio
-   // InÌcio Vetor
-   // EconÙmicos
+   // In√≠cio Vetor
+   // Econ√¥micos
    //Uno
    x[1,1]<- "Uno     "
    x[1,2]<- "2020"
@@ -290,7 +290,7 @@ Inicio
 
    //INICIO ALGORITMO
    start<-1
-   enquanto start<>0 faÁa
+   enquanto start<>0 fa√ßa
       //Menu Principal
       menu
       escreva("->")
@@ -299,10 +299,10 @@ Inicio
 
       escolha opcao
       caso 1
-         //Tabela de VeÌculos
+         //Tabela de Ve√≠culos
          tabela
          menu1<-"menu"
-         enquanto menu1="menu" faÁa
+         enquanto menu1="menu" fa√ßa
             escreval("Para voltar aperte a tecla ENTER.")
             escreva("->")
             leia (opcao1)
@@ -313,18 +313,18 @@ Inicio
       caso 2
          //Aluguel e Compra
          menu1<-"menu"
-         enquanto menu1="menu" faÁa
+         enquanto menu1="menu" fa√ßa
             limpatela
             menu2
             leia(opcao1)
             escolha opcao1
             caso 1
-               //SimulaÁ„o de LocaÁ„o
+               //Simula√ß√£o de Loca√ß√£o
                menu1<-"menu1"
                limpatela
-               enquanto menu1="menu1" faÁa
+               enquanto menu1="menu1" fa√ßa
                   tabela
-                  escreval("Digite o cÛdigo do veÌculo escolhido:")
+                  escreval("Digite o c√≥digo do ve√≠culo escolhido:")
                   escreva("->")
                   leia (y)
                   se (y>=1) e (y<=23) entao
@@ -332,20 +332,20 @@ Inicio
                      escreval("Carro: ",x[y,1])
                      escreval("Ano: ",x[y,2])
                      escreval("Montadora: ",x[y,3])
-                     escreval("Valor da di·ria: ",x[y,5])
+                     escreval("Valor da di√°ria: ",x[y,5])
                      escreval("")
-                     escreval("Informe por quantos dias deseja Alugar este veÌculo:")
+                     escreval("Informe por quantos dias deseja Alugar este ve√≠culo:")
                      escreva("->")
                      leia(dia)
                      limpatela
                      total<-dia*caracpnum(x[y,5])
                      menu1<-"menu2"
-                     enquanto menu1="menu2" faÁa
-                        escreval("A prÈvia do valor total do aluguel ficaria em R$",total:1:2)
+                     enquanto menu1="menu2" fa√ßa
+                        escreval("A pr√©via do valor total do aluguel ficaria em R$",total:1:2)
                         escreval("")
-                        escreval("Selecione uma das opÁoes abaixo:")
-                        escreval("1 - Prosseguir com a locaÁ„o")
-                        escreval("7 - Voltar a tabela de veÌculos")
+                        escreval("Selecione uma das op√ßoes abaixo:")
+                        escreval("1 - Prosseguir com a loca√ß√£o")
+                        escreval("7 - Voltar a tabela de ve√≠culos")
                         escreval("9 - Voltar ao menu principal")
                         escreval("0 - Encerrar Atendimento")
                         escreva("->")
@@ -354,13 +354,13 @@ Inicio
                         caso 1
                            //Recolhimento de dados do cliente
                            limpatela
-                           escreval("     ****¡rea Cadastral****")
+                           escreval("     ****√Årea Cadastral****")
                            escreval("Informe seu nome:")
                            escreva("->")
                            leia(nome)
                            escreval("Possui CNH?")
                            escreval("1 - Sim")
-                           escreval("2 - N„o")
+                           escreval("2 - N√£o")
                            escreva("->")
                            leia(cnh1)
                            escolha cnh1
@@ -370,7 +370,7 @@ Inicio
                               leia(cnh2)
                               se (cnh2="a") entao
                                  limpatela
-                                 escreval("… necessario possuir CNH de no mÌnimo tipo B para locar carros.")
+                                 escreval("√â necessario possuir CNH de no m√≠nimo tipo B para locar carros.")
                                  escreval("Aperte a tecla ENTER para voltar:")
                                  escreva("->")
                                  leia(opcao3)
@@ -378,7 +378,7 @@ Inicio
                                  limpatela
 
                               senao
-                                 escreval("Informe o n˙mero da sua CNH:")
+                                 escreval("Informe o n√∫mero da sua CNH:")
                                  escreva("->")
                                  leia(cnh)
                                  escreval("Informe sua idade:")
@@ -389,15 +389,15 @@ Inicio
 
                                  limpatela
                                  escreval("O valor total do aluguel ficaria em R$",total:1:2)
-                                 escreval("Agora um de nossos atendentes vai entrar em contato para finalizar a locaÁ„o.")
-                                 escreval("Informe seu telefone de contato (apenas n˙meros):")
+                                 escreval("Agora um de nossos atendentes vai entrar em contato para finalizar a loca√ß√£o.")
+                                 escreval("Informe seu telefone de contato (apenas n√∫meros):")
                                  escreva("->")
                                  leia(tel)
-                                 escreval("Informe a melhor data para essa ligaÁ„o (apenas o n˙mero do dia):")
+                                 escreval("Informe a melhor data para essa liga√ß√£o (apenas o n√∫mero do dia):")
                                  escreva("->")
                                  leia(data)
-                                 escreval("Escolha um perÌodo para essa ligaÁ„o:")
-                                 escreval("1 - Manh„")
+                                 escreval("Escolha um per√≠odo para essa liga√ß√£o:")
+                                 escreval("1 - Manh√£")
                                  escreval("2 - Tarde")
                                  escreval("3 - Noite")
                                  escreval("4 - Madrugada")
@@ -405,7 +405,7 @@ Inicio
                                  leia(turno)
                                  escolha turno
                                  caso 1
-                                    turno1<-"Manh„"
+                                    turno1<-"Manh√£"
 
                                  caso 2
                                     turno1<-"Tarde"
@@ -427,13 +427,13 @@ Inicio
                                  escreval("Ano: ",x[y,2])
                                  escreval("Montadora: ",x[y,3])
                                  escreval("Valor Total: R$",total:1:2)
-                                 escreval("Dia da ligaÁ„o: ",data.)
-                                 escreval("Hor·rio da ligaÁ„o: ",turno1.)
+                                 escreval("Dia da liga√ß√£o: ",data.)
+                                 escreval("Hor√°rio da liga√ß√£o: ",turno1.)
                                  escreval("")
                                  escreval("")
                                  escreval("Deseja realizar outro atendimento?")
                                  escreval("1 - Sim")
-                                 escreval("0 - N„o")
+                                 escreval("0 - N√£o")
                                  leia(opcao3)
                                  escolha opcao3
                                  caso 1
@@ -445,10 +445,10 @@ Inicio
                                  fimescolha
                               fimse
                            caso 2
-                              //Condutor n„o habilitado
+                              //Condutor n√£o habilitado
                               limpatela
-                              escreval("N„o È possÌvel alugar sem ser um condutor habilitado.")
-                              escreval("Escolha uma das opÁıes abaixo:")
+                              escreval("N√£o √© poss√≠vel alugar sem ser um condutor habilitado.")
+                              escreval("Escolha uma das op√ß√µes abaixo:")
                               escreval("1 - Voltar ao menu anterior")
                               escreval("2 - Voltar ao menu principal")
                               escreval("0 - Encerrar Atendimento")
@@ -497,12 +497,12 @@ Inicio
 
                fimenquanto
             caso 2
-               //SimulaÁ„o de Compra
+               //Simula√ß√£o de Compra
                limpatela
                menu1<-"menu1"
-               enquanto menu1="menu1" faÁa
+               enquanto menu1="menu1" fa√ßa
                   tabela
-                  escreval("Digite o cÛdigo do veÌculo escolhido:")
+                  escreval("Digite o c√≥digo do ve√≠culo escolhido:")
                   escreva("->")
                   leia (y)
                   se (y>=1) e (y<=23) entao
@@ -517,12 +517,12 @@ Inicio
                      leia(opcao)
                      limpatela
                      menu1<-"menu2"
-                     enquanto menu1="menu2" faÁa
-                        //SimulaÁ„o de Pagamento
+                     enquanto menu1="menu2" fa√ßa
+                        //Simula√ß√£o de Pagamento
                         escreval("Como deseja fazer o pagamento?")
-                        escreval("1 - ¿ Vista no cart„o (10% de desconto)")
-                        escreval("2 - ¿ Vista no Pix ou Dinheiro(15% de desconto)")
-                        escreval("3 - Parcelado no cart„o (10% de juros)")
+                        escreval("1 - √Ä Vista no cart√£o (10% de desconto)")
+                        escreval("2 - √Ä Vista no Pix ou Dinheiro(15% de desconto)")
+                        escreval("3 - Parcelado no cart√£o (10% de juros)")
                         leia(opcao2)
                         escolha opcao2
                         caso 1
@@ -559,10 +559,10 @@ Inicio
                         fimescolha
                         limpatela
                         menu1<-"menu3"
-                        enquanto menu1="menu3" faÁa
-                           escreval("Selecione uma das opÁoes abaixo:")
+                        enquanto menu1="menu3" fa√ßa
+                           escreval("Selecione uma das op√ßoes abaixo:")
                            escreval("1 - Prosseguir com a compra")
-                           escreval("7 - Voltar a tabela de veÌculos")
+                           escreval("7 - Voltar a tabela de ve√≠culos")
                            escreval("9 - Voltar ao menu principal")
                            escreval("0 - Encerrar Atendimento")
                            escreva("->")
@@ -576,7 +576,7 @@ Inicio
                               leia(nome)
                               escreval("Possui CNH?")
                               escreval("1 - Sim")
-                              escreval("2 - N„o")
+                              escreval("2 - N√£o")
                               escreva("->")
                               leia(cnh1)
                               escolha cnh1
@@ -586,7 +586,7 @@ Inicio
                                  leia(cnh2)
                                  se (cnh2="a") ou (cnh2="A") entao
                                     limpatela
-                                    escreval("… necessario possuir CNH de no mÌnimo tipo B para comprar carros.")
+                                    escreval("√â necessario possuir CNH de no m√≠nimo tipo B para comprar carros.")
                                     escreval("Aperte a tecla ENTER para voltar:")
                                     escreva("->")
                                     leia(opcao3)
@@ -594,7 +594,7 @@ Inicio
                                     limpatela
 
                                  senao
-                                    escreval("Informe o n˙mero da sua CNH:")
+                                    escreval("Informe o n√∫mero da sua CNH:")
                                     escreva("->")
                                     leia(cnh)
                                     escreval("Informe sua idade:")
@@ -602,15 +602,15 @@ Inicio
                                     limpatela
                                     escreval("O valor total da compra ficaria em R$",total:1:2)
                                     escreval("Agora um de nossos atendentes vai entrar em contato para finalizar a compra.")
-                                    escreval("Informe seu telefone de contato (apenas n˙meros):")
+                                    escreval("Informe seu telefone de contato (apenas n√∫meros):")
                                     escreva("->")
                                     leia(tel)
-                                    escreval("Informe a melhor data para essa ligaÁ„o (apenas o n˙mero do dia):")
+                                    escreval("Informe a melhor data para essa liga√ß√£o (apenas o n√∫mero do dia):")
                                     escreva("->")
                                     leia(data)
                                     limpatela
-                                    escreval("Escolha um perÌodo para essa ligaÁ„o:")
-                                    escreval("1 - Manh„")
+                                    escreval("Escolha um per√≠odo para essa liga√ß√£o:")
+                                    escreval("1 - Manh√£")
                                     escreval("2 - Tarde")
                                     escreval("3 - Noite")
                                     escreval("4 - Madrugada")
@@ -618,7 +618,7 @@ Inicio
                                     leia(turno)
                                     escolha turno
                                     caso 1
-                                       turno1<-"Manh„"
+                                       turno1<-"Manh√£"
 
                                     caso 2
                                        turno1<-"Tarde"
@@ -631,7 +631,7 @@ Inicio
                                     fimescolha
                                     limpatela
                                     //Tela de dados do atendimento
-                                    escreval("     ****¡rea Cadastral****")
+                                    escreval("     ****√Årea Cadastral****")
                                     escreval("Seguem dados do atendimento:")
                                     escreval("Nome: ",nome.)
                                     escreval("Idade: ",idade.)
@@ -641,13 +641,13 @@ Inicio
                                     escreval("Ano: ",x[y,2])
                                     escreval("Montadora: ",x[y,3])
                                     escreval("Valor Total: R$",total:1:2)
-                                    escreval("Dia da ligaÁ„o: ",data.)
-                                    escreval("Hor·rio da ligaÁ„o: ",turno1.)
+                                    escreval("Dia da liga√ß√£o: ",data.)
+                                    escreval("Hor√°rio da liga√ß√£o: ",turno1.)
                                     escreval("")
                                     escreval("")
                                     escreval("Deseja realizar outro atendimento?")
                                     escreval("1 - Sim")
-                                    escreval("0 - N„o")
+                                    escreval("0 - N√£o")
                                     leia(opcao3)
                                     escolha opcao3
                                     caso 1
@@ -659,10 +659,10 @@ Inicio
                                     fimescolha
                                  fimse
                               caso 2
-                                 //condutor n„o habilitado
+                                 //condutor n√£o habilitado
                                  limpatela
-                                 escreval("N„o È possÌvel comprar sem ser um condutor habilitado.")
-                                 escreval("Escolha uma das opÁıes abaixo:")
+                                 escreval("N√£o √© poss√≠vel comprar sem ser um condutor habilitado.")
+                                 escreval("Escolha uma das op√ß√µes abaixo:")
                                  escreval("1 - Voltar ao menu anterior")
                                  escreval("2 - Voltar ao menu principal")
                                  escreval("0 - Encerrar Atendimento")
@@ -746,20 +746,20 @@ Inicio
          limpatela
 
       caso 4
-         //D˙vidas Frequentes
+         //D√∫vidas Frequentes
          menu1<-"menu1"
-         enquanto menu1="menu1" faÁa
+         enquanto menu1="menu1" fa√ßa
             limpatela
             escreval("     ****Sobre a Empresa****")
             escreval("")
             escreval(" ______________________________________________")
-            escreval("|Selecione a categoria para tirar suas d˙vidas.|")
+            escreval("|Selecione a categoria para tirar suas d√∫vidas.|")
             escreval("|1 - Nossa Frota                               |")
             escreval("|2 - Dados Cadastrais                          |")
-            escreval("|3 - Regras LocaÁ„o                            |")
+            escreval("|3 - Regras Loca√ß√£o                            |")
             escreval("|4 - Regras Compra                             |")
             escreval("|5 - Reserva                                   |")
-            escreval("|6 - DevoluÁ„o                                 |")
+            escreval("|6 - Devolu√ß√£o                                 |")
             escreval("|7 - Multas                                    |")
             escreval("|8 - Acidente                                  |")
             escreval("|9 - Furto e Roubo                             |")
@@ -770,10 +770,10 @@ Inicio
             escolha opcao
                limpatela
             caso 1
-               //Sobre a Frota de VeÌculos
+               //Sobre a Frota de Ve√≠culos
                limpatela
-               escreval("Possuimos veÌculos novos e sempre com a manutenÁ„o em dia.")
-               escreval("Para mais detalhes, acesse a tabela de veÌculos no menu principal.")
+               escreval("Possuimos ve√≠culos novos e sempre com a manuten√ß√£o em dia.")
+               escreval("Para mais detalhes, acesse a tabela de ve√≠culos no menu principal.")
                escreval("")
                escreval("Aperte a tecla ENTER para voltar ao menu anterior.")
                escreva("->")
@@ -783,9 +783,9 @@ Inicio
             caso 2
                //Sobre os dados de cadastro
                limpatela
-               escreval("… OBRIGAT”RIO ser um condutor habilitado com no mÌnimo CNH-B.")
-               escreval("As informaÁıes recolhidas s„o: nome, idade,telefone de contato, cnh e catergoria da cnh.")
-               escreval("ApÛs a simulaÁ„o È realizado um agendamento para finalizar o atendimento com um de nossos atendentes.")
+               escreval("√â OBRIGAT√ìRIO ser um condutor habilitado com no m√≠nimo CNH-B.")
+               escreval("As informa√ß√µes recolhidas s√£o: nome, idade,telefone de contato, cnh e catergoria da cnh.")
+               escreval("Ap√≥s a simula√ß√£o √© realizado um agendamento para finalizar o atendimento com um de nossos atendentes.")
                escreval("")
                escreval("Aperte a tecla ENTER para voltar ao menu anterior.")
                escreva("->")
@@ -793,11 +793,11 @@ Inicio
                menu1<-"menu1"
 
             caso 3
-               //Regras locaÁ„o
+               //Regras loca√ß√£o
                limpatela
-               escreval("Ter CNH-B ou superior, CNH-A n„o permite locaÁ„o.")
-               escreval("Caso tenha entre 18 e 25 anos, È adicionado um valor de taxa de risco.")
-               escreval("Realize uma simulaÁ„o no menu de Aluguel e Compra para mais informaÁıes.")
+               escreval("Ter CNH-B ou superior, CNH-A n√£o permite loca√ß√£o.")
+               escreval("Caso tenha entre 18 e 25 anos, √© adicionado um valor de taxa de risco.")
+               escreval("Realize uma simula√ß√£o no menu de Aluguel e Compra para mais informa√ß√µes.")
                escreval("")
                escreval("Aperte a tecla ENTER para voltar ao menu anterior.")
                escreva("->")
@@ -807,9 +807,9 @@ Inicio
             caso 4
                //Regras de compra
                limpatela
-               escreval("Ter CNH-B ou superior, CNH-A n„o permite compra.")
+               escreval("Ter CNH-B ou superior, CNH-A n√£o permite compra.")
                escreval("Valor varia de acordo com a forma de pagamento.")
-               escreval("Realize uma simulaÁ„o no menu de Aluguel e Compra para mais informaÁıes.")
+               escreval("Realize uma simula√ß√£o no menu de Aluguel e Compra para mais informa√ß√µes.")
                escreval("")
                escreval("Aperte a tecla ENTER para voltar ao menu anterior.")
                escreva("->")
@@ -819,7 +819,7 @@ Inicio
             caso 5
                //Reserva
                limpatela
-               escreval("Para reservar, realize a simulaÁ„o e agende um horario de atendimento.")
+               escreval("Para reservar, realize a simula√ß√£o e agende um horario de atendimento.")
                escreval("")
                escreval("Aperte a tecla ENTER para voltar ao menu anterior.")
                escreva("->")
@@ -827,10 +827,10 @@ Inicio
                menu1<-"menu1"
 
             caso 6
-               //DevoluÁ„o
+               //Devolu√ß√£o
                limpatela
-               escreval("DevoluÁ„o ser· agendada com um de nossos atendentes.")
-               escreval("Em caso de atraso ser· cobrada multa proporcional.")
+               escreval("Devolu√ß√£o ser√° agendada com um de nossos atendentes.")
+               escreval("Em caso de atraso ser√° cobrada multa proporcional.")
                escreval("")
                escreval("Aperte a tecla ENTER para voltar ao menu anterior.")
                escreva("->")
@@ -840,8 +840,8 @@ Inicio
             caso 7
                //Multas
                limpatela
-               escreval("A M„o na Roda paga a multa e o condutor fica em debÌto com a empresa.")
-               escreval("Esse dÈbito pode ser negociado com um de nossos atendentes.")
+               escreval("A M√£o na Roda paga a multa e o condutor fica em deb√≠to com a empresa.")
+               escreval("Esse d√©bito pode ser negociado com um de nossos atendentes.")
                escreval("Caso queira negociar uma multa, entre no menu Fale Conosco e entre em contato.")
                escreval("")
                escreval("Aperte a tecla ENTER para voltar ao menu anterior.")
@@ -864,7 +864,7 @@ Inicio
             caso 9
                //Furto ou Roubo
                limpatela
-               escreval("Entre em contato com as autoridades e depois com um de nossos atendentes para mais orientaÁıes.")
+               escreval("Entre em contato com as autoridades e depois com um de nossos atendentes para mais orienta√ß√µes.")
                escreval("Formas de contato no menu Fale Conosco.")
                escreval("")
                escreval("Aperte a tecla ENTER para voltar ao menu anterior.")
@@ -886,17 +886,17 @@ Inicio
       caso 5
          //Sobre a empresa
          menu1<-"menu1"
-         enquanto menu1="menu1" faÁa
+         enquanto menu1="menu1" fa√ßa
             limpatela
             escreval("                ***Sobre a Empresa***")
             escreval("")
             escreval(" ___________________________________________________")
-            escreval("|       Locadora de VeÌculos M„o na Roda             \")
-            escreval("|H· 30 anos no mercado de locaÁ„o e venda de veÌculos \")
+            escreval("|       Locadora de Ve√≠culos M√£o na Roda             \")
+            escreval("|H√° 30 anos no mercado de loca√ß√£o e venda de ve√≠culos \")
             escreval("|                                                      \")
             escreval("|                                                       \________")
             escreval("|CNPJ: 99.999.999/9999-99                                        |")
-            escreval("|Sede: Av. Amazonas, N∫666 - Centro, Belo Horizonte - MG         |")
+            escreval("|Sede: Av. Amazonas, N¬∫666 - Centro, Belo Horizonte - MG         |")
             escreval("|       ______                            ______                 |")
             escreval("|_____ /  __  \_________________________ /  __  \________________|")
             escreval("      |  |__|  |                        |  |__|  |              ")
